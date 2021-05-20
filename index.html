@@ -86,7 +86,7 @@
                 </li>
                 <li>
                   <a class="dropdown-item py-2 my-1" href="#"
-                    >قسم القانون الإداري</a
+                    >قسم القانون الجنائي</a
                   >
                 </li>
               </ul>
@@ -126,7 +126,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                الاإمتحانات السابقة
+                الإمتحانات السابقة
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
@@ -220,7 +220,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">حول الموقع</a>
+              <a class="nav-link" href="#about">حول الموقع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">تواصل معنا</a>
             </li>
           </ul>
         </div>
@@ -263,9 +266,23 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
           "
-        ></div>
+        >
+          <div
+            class="
+              my-slide
+              m-auto
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <h3 class="slide-header">إمتحانات سابقة</h3>
+            <p class="lead">حل للإمتحانات السابقة وللأسئلة الهامة</p>
+          </div>
+        </div>
         <div
           class="carousel-item"
           style="
@@ -273,9 +290,26 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
           "
-        ></div>
+        >
+          <div
+            class="
+              my-slide
+              m-auto
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <h3 class="slide-header">مكتبات قانونية</h3>
+            <p class="lead">
+              لجميع أقسام القانون المدني والتجاري والإداري والدولي والدستوري
+              والجنائي
+            </p>
+          </div>
+        </div>
         <div
           class="carousel-item"
           style="
@@ -283,9 +317,23 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
           "
-        ></div>
+        >
+          <div
+            class="
+              my-slide
+              m-auto
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <h3 class="slide-header">مذكرات</h3>
+            <p class="lead">مذكرات لجميع الفرق الدراسية بكلية الحقوق</p>
+          </div>
+        </div>
       </div>
       <!-- <button
         class="carousel-control-prev"
@@ -321,13 +369,113 @@
             مذكرات وكذلك حل اسئلة الإمتحانات الهامة
           </p>
           <a
-            href="#contact"
+            href="#contact-us"
             class="btn d-flex justify-content-center align-items-center mt-4"
             >تواصل معنا</a
           >
         </div>
       </div>
     </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us">
+      <div class="contact m-auto container-xl">
+        <h1 class="contact-header text-center my-5" id="contact-us">
+          تواصل معنا
+        </h1>
+        <div class="row m-auto">
+          <div
+            class="
+              col-md-3 col-sm-12
+              m-auto
+              card
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <i class="fas fa-phone-alt"></i>
+            <h3 class="card-header">موبيل</h3>
+            <div class="card-details">
+              <a href="tel:+01111111125">011-11111125</a>
+            </div>
+          </div>
+          <div
+            class="
+              col-md-3 col-sm-12
+              m-auto
+              card
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <i class="fab fa-whatsapp"></i>
+            <h3 class="card-header">واتس آب</h3>
+            <div class="card-details">011-11111125</div>
+          </div>
+          <div
+            class="
+              col-md-3 col-sm-12
+              m-auto
+              card
+              d-flex
+              justify-content-center
+              align-items-center
+              flex-column
+            "
+          >
+            <a href="https://www.facebook.com"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <h3 class="card-header">صفحتنا علي الفيسبوك</h3>
+            <div class="card-details">
+              <a href="https://www.facebook.com">legalcounsel</a>
+            </div>
+          </div>
+        </div>
+        <form class="complaint row">
+          <h3 class="">للشكاوى والمقترحات</h3>
+          <div class="col-md-6 col-sm-12">
+            <label for="name" class="form-label">الاسم</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="nameHelp"
+            />
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <label for="email" class="form-label">البريد الإلكتروني</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="col-12 my-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >الرسالة</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="6"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn mx-auto mt-2">إرسال</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="d-flex justify-content-center align-items-center">
+      <p>©COPYRIGHT | 2021.DESGINED BY YISWEB</p>
+    </footer>
     <!-- jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
@@ -336,5 +484,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
   </body>
 </html>

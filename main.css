@@ -7,12 +7,12 @@
   font-family: "Almarai", sans-serif;
 }
 body {
-  background-color: #000;
+  background-color: antiquewhite;
 }
 
 .navbar {
   direction: rtl;
-  background-color: #000;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand {
@@ -26,6 +26,10 @@ body {
   color: #e8ce5a;
 }
 
+.nav-link {
+  font-size: 0.9rem;
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .dropdown-item:hover,
@@ -34,7 +38,7 @@ body {
 }
 
 .dropdown-menu {
-  background-color: #353431;
+  background-color: #000;
   border: none;
   z-index: 100;
   transition: all 0.3s ease-in-out;
@@ -51,12 +55,31 @@ body {
   height: 100vh;
 }
 
+.my-slide {
+  width: 80%;
+  height: 100%;
+}
+
+.slide-header {
+  font-size: 5rem;
+  font-weight: bold;
+  color: antiquewhite;
+}
+.my-slide .lead {
+  direction: rtl;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e8ce5a;
+}
+
+/* About Us */
+
 .about {
   direction: rtl;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   width: 80%;
   margin: auto;
 }
@@ -68,14 +91,14 @@ body {
 
 .about .lead {
   width: 800px;
-  color: white;
+  color: #000;
   font-size: 48px;
 }
 
 .btn {
-  color: #9a772c;
-  background-color: transparent;
-  border: 2px solid #9a772c;
+  color: white;
+  background-color: #9a772c;
+  border: none;
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -84,7 +107,121 @@ body {
 }
 
 .btn:hover {
-  color: white;
-  background-color: #9a772c;
+  color: #9a772c;
+  background-color: transparent;
+  border: 2px solid #9a772c;
+}
+
+/* conatact  us */
+.contact {
+  width: 100%;
+  height: 110vh;
+  direction: rtl;
+  margin-bottom: 50px;
+}
+.contact-header {
+  font-weight: bold;
+  color: #9a772c;
+  font-size: 3rem;
+}
+.card {
+  background-color: #f1f1f1;
+  height: 150px;
+  width: 30%;
+  border-radius: 10px;
   border: none;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}
+
+.card a {
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.card i {
+  font-size: 2rem;
+  color: #9a772c;
+}
+
+.card-header {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.card-details {
+  color: #333;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+.card-details a {
+  color: #333;
+}
+
+.card:hover > .card-header,
+.card:hover > .card-details,
+.card:hover > .card-details a {
+  color: #f1f1f1;
+}
+
+.complaint {
+  width: 100%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.complaint h3 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+  color: #9a772c;
+  margin-bottom: 30px;
+}
+.complaint label {
+  color: #333;
+  font-weight: bold;
+}
+
+.complaint input,
+.complaint textarea {
+  border-radius: 10px;
+  border-color: #9a772c;
+}
+
+.complaint input {
+  height: 50px;
+}
+
+.complaint input:focus,
+.complaint textarea:focus {
+  border: 2px solid #9a772c;
+  outline: none;
+}
+
+.complaint .btn {
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: auto;
+  margin-top: 50px;
 }
