@@ -13,10 +13,13 @@ body {
 .navbar {
   direction: rtl;
   transition: all 0.3s ease-in-out;
+  height: auto;
 }
 
 .navbar-brand {
   margin-left: 50px;
+  width: 60px;
+  height: 70px;
 }
 
 .nav-link,
@@ -88,7 +91,6 @@ body {
   width: 400px;
   height: 500px;
 }
-
 .about .lead {
   width: 800px;
   color: #000;
@@ -128,10 +130,10 @@ body {
 .card {
   background-color: #f1f1f1;
   height: 150px;
-  width: 30%;
   border-radius: 10px;
   border: none;
   transition: all 0.3s ease-in-out;
+  margin: auto;
 }
 .card:hover {
   background-color: #000;
@@ -155,6 +157,7 @@ body {
   border: none;
   color: #333;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .card-details {
@@ -214,6 +217,7 @@ body {
 
 /* FOOTER */
 footer {
+  margin: 0;
   background: #000;
   color: #f1f1f1;
   text-transform: uppercase;
@@ -224,4 +228,94 @@ footer {
   height: 50px;
   text-align: center;
   margin-top: 50px;
+}
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .image img {
+    width: 300px;
+    height: 350px;
+  }
+  .about .lead {
+    width: 90%;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .navbar {
+    background: #000 !important;
+  }
+  .navbar-brand {
+    margin-bottom: 40px;
+    width: 90px;
+  }
+  .navbar-toggler {
+    font-size: 30px;
+  }
+  .nav-link,
+  .dropdown-item {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .my-slide .lead,
+  .slide-header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-brand {
+    margin: 0px;
+    width: 50px;
+  }
+  .navbar-toggler {
+    font-size: 20px;
+  }
+
+  .slide-header {
+    font-size: 2.3rem;
+  }
+  .my-slide .lead {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    margin-top: 20px;
+  }
+  .about .image img {
+    width: 200px;
+    height: 250px;
+  }
+  .about .lead {
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .contact-header {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+
+  footer {
+    font-size: 10px;
+    letter-spacing: 2px;
+    height: 40px;
+  }
 }
